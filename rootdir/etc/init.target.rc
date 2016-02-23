@@ -314,11 +314,6 @@ service dcvsd1 /system/bin/dcvsd -c 1 -f /data/misc/dcvsd/dcvsd1.conf
     user root
     disabled
 
-service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
-   class late_start
-   user root
-   group system
-
 service thermald /system/bin/thermald
     class main
     user root
